@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Data
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Models
+models/checkpoints/*
+models/final/*
+!models/checkpoints/.gitkeep
+!models/final/.gitkeep
+
+# Experiments
+experiments/logs/*
+experiments/results/*
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/

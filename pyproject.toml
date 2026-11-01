@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trl-intelligence"
+version = "0.1.0"
+description = "AI-powered Technology Readiness Level assessment system"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "PyMuPDF>=1.24",
+    "pydantic>=2.8"
+]
+
+[project.optional-dependencies]
+api = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30"
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.8"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
