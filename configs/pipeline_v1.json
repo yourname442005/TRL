@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "extraction": {
+    "min_candidate_chars": 15,
+    "max_candidates_per_section": 200,
+    "technical_cues": [
+      "test",
+      "demonstrat",
+      "prototype",
+      "validat",
+      "flight",
+      "model",
+      "simulat",
+      "qualif",
+      "deploy",
+      "operational",
+      "experiment",
+      "bench"
+    ],
+    "prospective_cues": [
+      "planned",
+      "future work",
+      "will be tested",
+      "not yet",
+      "next year",
+      "to be demonstrated",
+      "proposed"
+    ],
+    "negation_cues": [
+      "not demonstrated",
+      "has not yet",
+      "failed",
+      "no test data",
+      "not been",
+      "unable to",
+      "did not pass"
+    ],
+    "assertion_cues": [
+      "demonstrated",
+      "was tested",
+      "validated in",
+      "results show",
+      "completed",
+      "verified",
+      "collected",
+      "recorded",
+      "passed"
+    ],
+    "type_cues": {
+      "test": ["test report", "test data", "test result", "testing"],
+      "simulation": ["simulation", "simulated", "model output"],
+      "demonstration": ["demonstration", "demonstrated", "demo"],
+      "analysis": ["analysis", "analytical", "assessed"],
+      "report": ["report", "documented", "record"],
+      "design": ["design", "schematic", "blueprint"],
+      "operation": ["operational", "in service", "deployed"],
+      "mention": ["mentioned", "described", "overview"]
+    }
+  },
+  "aggregation": {
+    "level_threshold": 0.6,
+    "criterion_min_confidence": 0.5,
+    "min_evidence_to_assess": 3
+  },
+  "strength_map": {
+    "mention": "weak",
+    "design": "moderate",
+    "report": "moderate",
+    "analysis": "moderate",
+    "simulation": "moderate",
+    "test": "strong",
+    "demonstration": "strong",
+    "operation": "strong"
+  },
+  "signal": {
+    "enabled": false,
+    "max_chars": 512,
+    "variant": "m1_baseline"
+  }
+}

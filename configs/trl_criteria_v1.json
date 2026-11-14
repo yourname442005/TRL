@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "criteria_set_id": "hackathon_trl_v1",
+  "source_note": "Level definitions follow the NASA Technology Readiness Assessment Guidelines (NASA/SP-2016-6105, NASA Tech Handbook) and the DoD Technology Readiness Assessment Deskbook (2009); level names align with the NASA TechPort 9-level TRL label space (trlCurrent). This criteria set is a heuristic aid for evidence-driven assessment, not a certification standard.",
+  "strength_map": {
+    "mention": "weak",
+    "design": "moderate",
+    "report": "moderate",
+    "analysis": "moderate",
+    "simulation": "moderate",
+    "test": "strong",
+    "demonstration": "strong",
+    "operation": "strong"
+  },
+  "levels": [
+    {
+      "trl": 1,
+      "name": "Basic principles observed and reported",
+      "criteria": [
+        {
+          "criterion_id": "T1.C1",
+          "description": "Basic principles observed and reported",
+          "match_hints": ["basic principles", "fundamental research", "scientific basis", "observed principles"],
+          "guidance": "Provide a report of observed basic principles establishing the scientific basis of the technology.",
+          "evidence_types": ["report", "analysis"],
+          "example_artifacts": ["research note", "literature summary", "principles report"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T1.C2",
+          "description": "Underlying phenomenon characterized",
+          "match_hints": ["phenomenon", "characterization"],
+          "guidance": "Provide documentation characterizing the underlying physical or scientific phenomenon under study.",
+          "evidence_types": ["analysis", "report"],
+          "example_artifacts": ["science note", "analysis memo"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 2,
+      "name": "Technology concept and/or application formulated",
+      "criteria": [
+        {
+          "criterion_id": "T2.C1",
+          "description": "Technology concept and/or application formulated",
+          "match_hints": ["application concept", "concept formulated", "trade study", "feasibility study"],
+          "guidance": "Provide a written concept statement or trade study defining the proposed application.",
+          "evidence_types": ["report", "design"],
+          "example_artifacts": ["concept document", "trade study"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T2.C2",
+          "description": "Analytical or experimental verification of the concept approach",
+          "match_hints": ["concept verification", "analytical model", "experimentally verified"],
+          "guidance": "Provide an analytical model or early experiment verifying the proposed concept approach.",
+          "evidence_types": ["analysis", "simulation"],
+          "example_artifacts": ["analytical model", "early experiment record"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 3,
+      "name": "Analytical and experimental critical function and/or characteristic proof of concept",
+      "criteria": [
+        {
+          "criterion_id": "T3.C1",
+          "description": "Analytical critical function and/or characteristic proof of concept",
+          "match_hints": ["proof of concept", "analytical", "critical function", "characteristic"],
+          "guidance": "Provide an analysis report demonstrating the critical function or characteristic as a proof of concept.",
+          "evidence_types": ["analysis", "simulation"],
+          "example_artifacts": ["analysis report", "simulation output"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T3.C2",
+          "description": "Experimental laboratory demonstration of the critical function",
+          "match_hints": ["laboratory demonstration", "bench test", "component level"],
+          "guidance": "Provide bench test data from a laboratory demonstration of the critical function at component level.",
+          "evidence_types": ["test", "demonstration"],
+          "example_artifacts": ["bench test data", "lab demonstration report"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 4,
+      "name": "Component and/or breadboard validation in laboratory environment",
+      "criteria": [
+        {
+          "criterion_id": "T4.C1",
+          "description": "Component and/or breadboard validation in laboratory environment",
+          "match_hints": ["component validation", "breadboard", "laboratory test", "verified in lab"],
+          "guidance": "Provide a component or breadboard validation test report executed in a laboratory environment, including acceptance criteria, conditions, and results.",
+          "evidence_types": ["test", "report"],
+          "example_artifacts": ["lab test report", "acceptance criteria"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T4.C2",
+          "description": "Integration risk identified",
+          "match_hints": ["integration risk", "risk assessment"],
+          "guidance": "Provide a risk assessment identifying integration risks for combining the validated components.",
+          "evidence_types": ["analysis", "report"],
+          "example_artifacts": ["risk register", "risk assessment report"],
+          "min_strength": "moderate",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 5,
+      "name": "Component and/or breadboard validation in relevant environment",
+      "criteria": [
+        {
+          "criterion_id": "T5.C1",
+          "description": "Component and/or breadboard validation in relevant environment",
+          "match_hints": ["relevant environment", "component test", "simulated environment"],
+          "guidance": "Provide component test report executed in a relevant environment, including acceptance criteria, conditions, and results.",
+          "evidence_types": ["test", "demonstration"],
+          "example_artifacts": ["test plan", "test report", "test data"],
+          "min_strength": "strong",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T5.C2",
+          "description": "Fidelity of the relevant environment justified",
+          "match_hints": ["representative environment", "fidelity", "justified"],
+          "guidance": "Provide an environment rationale justifying why the test environment is representative of the operational environment.",
+          "evidence_types": ["analysis", "report"],
+          "example_artifacts": ["environment rationale", "fidelity assessment"],
+          "min_strength": "strong",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 6,
+      "name": "System/subsystem model or prototype demonstration in a relevant environment",
+      "criteria": [
+        {
+          "criterion_id": "T6.C1",
+          "description": "System/subsystem model or prototype demonstration in a relevant environment",
+          "match_hints": ["system prototype", "prototype demonstration", "subsystem prototype"],
+          "guidance": "Provide a prototype demonstration report with results showing the system or subsystem operating under relevant conditions.",
+          "evidence_types": ["demonstration", "test"],
+          "example_artifacts": ["prototype demo report", "test results"],
+          "min_strength": "strong",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T6.C2",
+          "description": "Critical operations of the prototype documented",
+          "match_hints": ["operational", "mission profile"],
+          "guidance": "Provide documentation of critical prototype operations, including the mission profile exercised.",
+          "evidence_types": ["report", "test"],
+          "example_artifacts": ["operations plan", "mission profile document"],
+          "min_strength": "strong",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 7,
+      "name": "System prototype demonstration in an operational environment",
+      "criteria": [
+        {
+          "criterion_id": "T7.C1",
+          "description": "System prototype demonstration in flight/operational environment",
+          "match_hints": ["flight demonstration", "flight test", "airborne"],
+          "guidance": "Provide a flight test report demonstrating the system prototype in a flight environment.",
+          "evidence_types": ["test", "demonstration"],
+          "example_artifacts": ["flight test report", "telemetry data"],
+          "min_strength": "strong",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T7.C2",
+          "description": "Flight readiness/review documented",
+          "match_hints": ["flight readiness", "readiness review"],
+          "guidance": "Provide flight readiness review documentation authorizing the prototype demonstration.",
+          "evidence_types": ["report", "analysis"],
+          "example_artifacts": ["readiness review minutes", "flight readiness report"],
+          "min_strength": "strong",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 8,
+      "name": "Actual system completed and qualified through test and demonstration",
+      "criteria": [
+        {
+          "criterion_id": "T8.C1",
+          "description": "Actual system completed and flight qualified",
+          "match_hints": ["flight qualified", "qualification test", "airworthiness"],
+          "guidance": "Provide a qualification report showing the actual system completed and qualified through test and demonstration.",
+          "evidence_types": ["test", "report"],
+          "example_artifacts": ["qualification report", "test certification"],
+          "min_strength": "strong",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T8.C2",
+          "description": "First unit produced and tested",
+          "match_hints": ["first unit", "production unit"],
+          "guidance": "Provide first unit production and test records for the actual system.",
+          "evidence_types": ["test", "operation"],
+          "example_artifacts": ["first unit test record", "production acceptance record"],
+          "min_strength": "strong",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "trl": 9,
+      "name": "Actual system proven successful in operation",
+      "criteria": [
+        {
+          "criterion_id": "T9.C1",
+          "description": "Actual system proven successful in operation",
+          "match_hints": ["operational success", "mission success", "in service", "deployed operationally"],
+          "guidance": "Provide an operational record showing the actual system proven successful in operation.",
+          "evidence_types": ["operation", "report"],
+          "example_artifacts": ["operational record", "mission success report"],
+          "min_strength": "strong",
+          "weight": 1.0
+        },
+        {
+          "criterion_id": "T9.C2",
+          "description": "Sustained operations documented",
+          "match_hints": ["sustained operations", "ongoing operations"],
+          "guidance": "Provide service history documenting sustained, ongoing operations of the system.",
+          "evidence_types": ["operation", "report"],
+          "example_artifacts": ["service history", "operations summary"],
+          "min_strength": "strong",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

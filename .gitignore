@@ -17,6 +17,10 @@ data/external/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/external/.gitkeep
+# Preserve provenance doc; raw pages and crawl artifacts stay ignored forever
+!data/raw/techport/
+data/raw/techport/*
+!data/raw/techport/SOURCE.md
 
 # Models
 models/checkpoints/*
@@ -40,3 +44,7 @@ htmlcov/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

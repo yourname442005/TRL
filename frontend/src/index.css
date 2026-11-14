@@ -1,0 +1,34 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1419;
+  --card: #171d24;
+  --border: #2a333e;
+  --text: #e6edf3;
+  --muted: #8b98a5;
+  --accent: #4da3ff;
+  --support: #2ea043;
+  --missing: #d29922;
+  --contra: #f85149;
+  --neutral: #3d4753;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.mono {
+  font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
